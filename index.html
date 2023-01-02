@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>évaluation 02/01/2023</title>
+</head>
+<body>
+    <div class="formulaire">
+        <form name="formulaire_inscription" id="formulaire_inscription" method="GET" action="">
+            <label for="Nom">Nom</label>
+            <input type="text" name="nom" id="nom" placeholder="Nom">
+            <label for="Nom">Prénom</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Prénom">
+            <label for="mdp">Mot de Passe</label>
+            <input type="text" name="mdp" id="mdp" placeholder="Mot de Passe" onblur="mdpcorespondent()">
+            <label for="mdpr">Répétez votre Mot de Passe</label>
+            <input type="text" name="mdpr" id="mdpr" placeholder="Répéter le Mot de Passe" onblur="mdpcorespondent()">
+            <button type="button" name="gmdp" onclick="GMDP()">Générer un mot de passe sécurisé</button>
+            <label for="email">Adresse Email</label>
+            <input type="email" name="email" id="email" placeholder="Email" onblur="Email(this)">
+            <label for="tel">Téléphone</label>
+            <input type="tel" name="tel" id="tel" placeholder="Téléphone" onblur="Tel(this)">
+            <button type="submit" name="submit">Valider</button>
+        </form>
+    </div>
+    <div id="message">
+        
+    </div>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+</body>
+</html>
